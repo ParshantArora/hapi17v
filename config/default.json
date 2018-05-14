@@ -1,0 +1,11 @@
+{
+	"Jwt" : {
+		"key" : "DemoHapiNode",
+		"algorithmUsed" : "HS512",
+        "expiresInTime" :  3600
+      
+    },
+    "bycryptKey"  : {
+        "saltRounds" : 10
+    }
+}

@@ -1,0 +1,10 @@
+babel node install error  failed to start process, "babel-node" exec not found
+solution  : npm install -g babel-cli can solve for me.
+
+
+
+validation custom name
+
+SyntaxError on spread operator, while using babel env preset
+https://stackoverflow.com/questions/48066025/syntaxerror-on-spread-operator-while-using-babel-env-preset
+solution : npm install --save-dev babel-plugin-transform-object-rest-spread
