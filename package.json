@@ -1,0 +1,18 @@
+{
+  "name": "com.hapi17v",
+  "version": "1.0.0",
+  "description": "demo Project with hapi 17 version",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "keywords": [
+    "hapi17",
+    "node"
+  ],
+  "author": "Parshant Nagpal",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^17.4.0"
+  }
+}
