@@ -6,8 +6,10 @@ filename  : index.js
 
 import createAccount from './createAccount';
 import buyItems from './buyItems';
+import addAmount from './addAmount';
 export default [
     createAccount,
-    buyItems
+    buyItems,
+    addAmount
 ]
 

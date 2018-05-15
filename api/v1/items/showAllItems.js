@@ -5,10 +5,10 @@ filename  : showAllItems.js
 */
 import { showAllItems } from '../../../controllers/items'
 export default {
-    method : 'GET',
-    path : '/items/showItems',
-    config :  {
-        auth : 'jwt'
+    method: 'GET',
+    path: '/items/showItems',
+    config: {
+        auth: 'jwt'
     },
-    handler  : showAllItems
+    handler: showAllItems
 }

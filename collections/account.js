@@ -8,25 +8,29 @@ import Boom from 'boom';
 const Schema = Mongoose.Schema;
 
 class AccountClass {
-    static checkAccountExist(userId){
-        return this.findOne({userId})
+    static checkAccountExist(userId) {
+        return this.findOne({ userId })
     }
-    static saveAccount(payload){
+    static saveAccount(payload) {
         return this(payload).save();
     }
-    static setAmount(_id,price){
-        return this.findByIdAndUpdate({_id},{  $inc: { "amount"  : price }},{new : true}).catch(error =>{
-          
-            throw  Boom.notFound("_id not Found");
+    static setAmount(_id, price) {
+        return this.findByIdAndUpdate({ _id }, { $inc: { "amount": price } }, { new: true }).catch(error => {
+            throw Boom.notFound("_id not Found");
+        });
+    }
+    static addAmount(accountNumber, price) {
+        return this.findOneAndUpdate({ accountNumber }, { $inc: { "amount": price } }, { new: true }).catch(error => {
+            throw Boom.notFound("_id not Found");
         });
     }
 
 }
 
 const AccountSchema = new Schema({
-    userId  : { type : String, required  :true},
-    accountNumber  : {type :String , required  :true},
-    amount : {type : Number ,  default : 0},
+    userId: { type: String, required: true },
+    accountNumber: { type: String, required: true },
+    amount: { type: Number, default: 0 },
 })
 AccountSchema.loadClass(AccountClass);
-export default Mongoose.model("Account",AccountSchema)
+export default Mongoose.model("Account", AccountSchema)

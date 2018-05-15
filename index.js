@@ -7,7 +7,7 @@ filename  : index.js
 
 import configureServer from './server';
 import configureDatabase from './db';
-    
+
 configureServer();
 
 configureDatabase();

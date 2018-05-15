@@ -7,4 +7,4 @@ filename  : index.js
 import user from './user';
 import accounts from './accounts';
 import items from './items';
-export default [...user,...accounts,...items];
+export default [...user, ...accounts, ...items];
