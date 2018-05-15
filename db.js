@@ -1,3 +1,9 @@
+/*
+Author : Parshant Nagpal
+Description : create database connection
+filename  : account.js
+*/
+
 import Mongoose from 'mongoose';
 
 export default async ()=>{

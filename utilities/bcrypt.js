@@ -1,3 +1,9 @@
+/*
+Author : Parshant Nagpal
+Description : All function related to password bycrypt
+filename  : bycrpt.js
+*/
+
 import bcrypt from 'bcrypt';
 let saltRounds = 10;
 export const bcryptPassword = (password)=>{

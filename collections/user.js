@@ -1,3 +1,8 @@
+/*
+Author : Parshant Nagpal
+Description : create the user model
+filename  : user.js
+*/
 import Mongoose from 'mongoose';
 const Schema = Mongoose.Schema;
 

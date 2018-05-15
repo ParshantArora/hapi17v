@@ -1,3 +1,8 @@
+/*
+Author : Parshant Nagpal
+Description :export the logout route
+filename  : login.js
+*/
 import {logoutUser} from '../../../controllers/user';
 
 export default {

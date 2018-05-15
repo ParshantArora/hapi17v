@@ -1,4 +1,8 @@
-
+/*
+Author : Parshant Nagpal
+Description : Project all pluin register and start the server
+filename  : account.js
+*/
 import Hapi from 'hapi';
 import plugins from './plugins'; 
 

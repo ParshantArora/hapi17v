@@ -1,3 +1,9 @@
+/*
+Author : Parshant Nagpal
+Description : all function releated to jwt token
+filename  : auth.js
+*/
+
 import jwt from 'jsonwebtoken';
 let jwtKey = "DemoNodeHapi";
 import Messages from './messages';

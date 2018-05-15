@@ -1,3 +1,9 @@
+/*
+Author : Parshant Nagpal
+Description :export the login route
+filename  : login.js
+*/
+
 import Joi from 'Joi';
 import {logionUser} from '../../../controllers/user';
 export default {

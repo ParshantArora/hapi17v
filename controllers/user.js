@@ -1,3 +1,10 @@
+/*
+Author : Parshant Nagpal
+Description : User controller
+filename  : account.js
+*/
+
+
 import {register,login,logout} from '../services/user'
 import {successAction, failAction} from '../utilities/rest'
 

@@ -1,3 +1,8 @@
+/*
+Author : Parshant Nagpal
+Description :export the register route
+filename  : register.js
+*/
 
 import Joi from 'Joi'; 
 import { registerUser }  from '../../../controllers/user'

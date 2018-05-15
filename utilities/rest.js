@@ -1,3 +1,9 @@
+/*
+Author : Parshant Nagpal
+Description :  common success and fail actions 
+filename  : account.js
+*/
+
 import Boom from 'boom'
 
 export const successAction = (data,message = 'OK') => ({

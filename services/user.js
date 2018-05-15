@@ -1,3 +1,11 @@
+/*
+Author : Parshant Nagpal
+Description : Constains all services related user
+filename  : account.js
+*/
+
+
+
 import User from '../collections/user'
 import { bcryptPassword, comparepassword }  from '../utilities/bcrypt';
 import { tokenCreate } from '../utilities/auth';
@@ -33,7 +41,7 @@ export const login = async payload => {
   if(!isPasswordVerify){
     throw new Error("password is incorrect")
   }
-  let tokendata =  await tokenCreate(payload.password);
+  let tokendata =  await tokenCreate(payload);
   console.log("tokendata",tokendata)
   let updateData =   await  User.updateById({authtoken : tokendata},dataCheck._id)
 if(updateData){
