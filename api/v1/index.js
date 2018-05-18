@@ -7,4 +7,5 @@ filename  : index.js
 import user from './user';
 import accounts from './accounts';
 import items from './items';
-export default [...user, ...accounts, ...items];
+import cart from './cart';
+export default [...user, ...accounts, ...items,...cart];

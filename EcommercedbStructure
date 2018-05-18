@@ -1,0 +1,128 @@
+//==>user
+
+{
+    name: {
+        first: 'String',
+        middle: 'String',
+        last: 'String'
+    },
+    email: 'String',
+    phone: {
+        number: 'String',
+        countryCode: 'String'
+    },
+    address: [], //collection separate
+    profileImage: 'String',
+    role: ['Integer'] // 0 = consumer,1 = seller , 2 merchant/admin   
+    auth: [
+        {
+            token: 'String'
+            createdAt: 'Date'
+        }
+    ],
+    verified: {
+    mobile: {
+        status: 'Boolean',
+        token: 'Number'
+        },
+    email: {
+        status: 'Boolean',
+        token: 'Number'
+        }
+    },
+    status: 'Integer', // 0:- pending, 1:- accepted, 3:- block
+    rating: {
+        avg: 'Integer',
+        [], //collection separate
+    },
+    lastLogin: 'Date',
+    loginCount: 'Integer',
+    createdAt: 'Date'
+    updatedAt: 'Date'
+}
+
+
+==>Product Category
+
+{
+   _id : string,
+   name :  String,
+}
+
+=> Product
+{
+    _id : String,
+    userId
+    name
+    description
+    categoryId
+    variant: [] // Collection Separate
+    tags: ['String']
+}
+
+===> Product Variant
+{
+    _id
+    productId
+    color: 'String',
+    size: 'Integer',
+    price: 'Integer'
+    images: [],
+    quantity
+    itemsSold
+}
+
+===> Cart
+{
+    _id
+    userId
+    products: [
+        {
+            productId
+            productVariantId
+            quantity
+        }
+    ]
+}
+
+====> Order
+{
+    _id
+    orderNumber
+    userId
+    products: [
+        {
+            productId
+            productVariantId
+            quantity
+            price
+        }
+    ]
+    deliveryAddress: {}
+    status: 'Integer' //0 => Placed, 1=> Shipped, 2=>Delievered, 3=> Reported, 4=>Resolved, 5=>Cancelled
+    createdAt
+    updatedAt
+}
+
+===> Bank Account
+{
+    _id
+    userId
+    name
+    number
+    ifsc
+    createdAt
+    updatedAt
+}
+
+===> Card Details
+{
+    _id
+    userId
+    name
+    cardNumber
+    month
+    year
+    createdAt
+    updatedAt
+}
